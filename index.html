@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Best Hero</h1>
+    <p id="description">A simple survey to find the best hero</p>
+    <form id="survey-form">
+      <fieldset class="first">
+        <label for="name" id="name-label">
+          Name:
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="João Silva"
+            required
+          />
+        </label>
+        <label for="email" id="email-label">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="joao.silva@mail.com"
+            required
+          />
+        </label>
+        <label id="number-label" for="number">
+          Age:
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="13"
+            max="120"
+            placeholder="18"
+            value="0"
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="hqMaker"
+          >Select the who has the best heroes:
+          <label><input type="radio" value="dc" name="hqMaker" /> DC</label>
+          <label
+            ><input type="radio" value="marvel" name="hqMaker" /> Marvel</label
+          >
+        </label>
+        <label for="hero">
+          Select the best super hero:
+          <select name="hero" id="dropdown">
+            <option value="1">(select one)</option>
+            <option value="2">Batman</option>
+            <option value="3">Wonder Woman</option>
+            <option value="4">Super Man</option>
+            <option value="5">Spider Man</option>
+            <option value="6">Iron Man</option>
+            <option value="7">Another</option>
+          </select>
+        </label>
+        <label>
+          Mark the best features of your favorite hero:
+          <label for="inteligent"
+            ><input
+              value="inteligent"
+              type="checkbox"
+              id="inteligent"
+              name="inteligent"
+            />
+            Inteligent</label
+          >
+          <label for="strong"
+            ><input value="strong" type="checkbox" id="strong" name="strong" />
+            Strong</label
+          >
+          <label for="cunning"
+            ><input
+              value="cunning"
+              type="checkbox"
+              id="cunning"
+              name="cunning"
+            />
+            Cunning</label
+          >
+          <label for="kind"
+            ><input value="kind" type="checkbox" id="kind" name="kind" />
+            Kind</label
+          >
+          <label for="fearless"
+            ><input
+              value="fearless"
+              type="checkbox"
+              id="fearless"
+              name="fearless"
+            />
+            Fearless</label
+          >
+          <label for="beutiful"
+            ><input
+              value="beutiful"
+              type="checkbox"
+              id="beutiful"
+              name="beutiful"
+            />
+            Beutiful</label
+          >
+        </label>
+        <label for="comment"
+          >Write why you choose that hero:
+          <textarea id="comment" rows="3" cols="60" name="comment"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit Hero" />
+    </form>
+  </body>
+</html>

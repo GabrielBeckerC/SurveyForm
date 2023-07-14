@@ -1,0 +1,55 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://thewarriormessenger.com/wp-content/uploads/2019/12/29920868100_df6809e8d8_z.jpg);
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  height: 100vh;
+  width: 100%;
+}
+
+form {
+  background-color: rgb(63, 63, 127);
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+input,
+select,
+textarea {
+  background-color: rgba(63, 63, 127, 80%);
+  color: #fff;
+  display: inline-block;
+}
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 10px 0;
+}
+
+input[type="submit"] {
+  height: 2em;
+  width: 8em;
+  margin: 15px;
+}
+
+textarea {
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
